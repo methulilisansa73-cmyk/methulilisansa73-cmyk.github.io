@@ -1,0 +1,222 @@
+/* Minimal Professional Portfolio Theme */
+:root {
+  --accent: #1877c9;
+  --bg: #f7fafd;
+  --white: #fff;
+  --text: #1a1a1a;
+  --shadow: 0 3px 18px rgba(24,119,201,0.05);
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Segoe UI', Arial, sans-serif;
+  line-height: 1.7;
+  min-height: 100vh;
+}
+
+header {
+  background: var(--white);
+  box-shadow: var(--shadow);
+  padding: 2.5rem 1rem 2rem 1rem;
+  text-align: center;
+  border-bottom: 3px solid var(--accent);
+}
+
+header h1 {
+  margin: 0 0 0.3rem 0;
+  font-size: 2.7rem;
+  letter-spacing: 1px;
+}
+
+header .tagline {
+  color: #4d94d6;
+  font-weight: 500;
+  font-size: 1.2rem;
+  margin-top: 0;
+}
+
+main {
+  max-width: 760px;
+  margin: 2.5rem auto;
+  padding: 0 1.2rem;
+  background: var(--white);
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+}
+
+section {
+  margin-bottom: 2.4rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #e6eaf1;
+}
+
+section:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-size: 1.4rem;
+  color: var(--accent);
+  letter-spacing: 0.5px;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+h3 {
+  color: #225b88;
+  margin-top: 0.8rem;
+  margin-bottom: 0.35rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+#about-photo-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2.2rem;
+  flex-wrap: wrap;
+}
+
+.about-text {
+  flex: 2;
+}
+
+.about-photo {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.profile-img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid var(--accent);
+  background: #e6eaf1;
+  box-shadow: 0 2px 8px #e6eaf1;
+}
+
+.edu-flex {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.edu-block {
+  flex: 1;
+  min-width: 200px;
+  background: #f2f6fa;
+  border-radius: 8px;
+  padding: 1rem 1.1rem 1rem 1.1rem;
+  box-shadow: 0 1px 3px #e6eaf1;
+  margin-bottom: 0.7rem;
+}
+
+.icon-list {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 2rem;
+}
+
+.icon-list li {
+  position: relative;
+  padding-left: 1.3em;
+  margin-bottom: 0.3em;
+}
+
+.icon-list li:before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-size: 1.2em;
+  top: 0;
+  line-height: 1;
+}
+
+.projects-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.projects-list li {
+  margin-bottom: 1.5rem;
+}
+
+.projects-list h3 {
+  margin: 0 0 0.3rem 0;
+  font-size: 1.1rem;
+}
+
+.projects-list a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px dotted var(--accent);
+  transition: border 0.15s;
+}
+
+.projects-list a:hover {
+  border-bottom: 2px solid var(--accent);
+}
+
+.pdf-button {
+  display: inline-block;
+  background: var(--accent);
+  color: var(--white);
+  font-weight: 500;
+  text-decoration: none;
+  padding: 0.62em 1.5em;
+  border-radius: 2em;
+  margin-top: 0.7em;
+  font-size: 1.05em;
+  box-shadow: 0 1px 6px #e6eaf1;
+  transition: background 0.15s;
+}
+
+.pdf-button:hover {
+  background: #145e98;
+}
+
+#contact a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  padding: 2.2rem 1rem 1rem 1rem;
+  color: #8792a2;
+  font-size: 1rem;
+  background: none;
+}
+
+@media (max-width: 700px) {
+  #about-photo-flex, .edu-flex {
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+  main {
+    padding: 0 0.5rem;
+  }
+  .about-photo {
+    justify-content: flex-start;
+  }
+  .profile-img {
+    width: 110px;
+    height: 110px;
+  }
+}
