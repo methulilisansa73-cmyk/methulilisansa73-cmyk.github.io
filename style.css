@@ -18,8 +18,8 @@ html, body {
 }
 
 header {
-  background: #e0f2fe; /* nice blue */
-  color: #fff;         /* white text for contrast */
+  background: #e0f2fe; 
+  color: #fff;        
   padding: 2.5rem 1rem 2rem 1rem;
   text-align: center;
   border-bottom: 3px solid #1877c9;
@@ -27,7 +27,7 @@ header {
 }
 header h1,
 header .tagline {
-  color: #fff; /* ensure text is white */
+  color: #000; 
 }
 
 header h1 {
