@@ -10,7 +10,7 @@
 html, body {
   margin: 0;
   padding: 0;
-  background: var(--bg);
+  background: #2563eb;
   color: var(--text);
   font-family: 'Segoe UI', Arial, sans-serif;
   line-height: 1.7;
