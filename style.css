@@ -18,11 +18,16 @@ html, body {
 }
 
 header {
-  background: var(--bg);
-  box-shadow: var(--shadow);
+  background: #2563eb; /* nice blue */
+  color: #fff;         /* white text for contrast */
   padding: 2.5rem 1rem 2rem 1rem;
   text-align: center;
-  border-bottom: 3px solid var(--accent);
+  border-bottom: 3px solid #1877c9;
+  box-shadow: 0 3px 18px rgba(24,119,201,0.05);
+}
+header h1,
+header .tagline {
+  color: #fff; /* ensure text is white */
 }
 
 header h1 {
