@@ -1,4 +1,3 @@
-/* Minimal Professional Portfolio Theme */
 :root {
   --accent: #1877c9;
   --bg: #f7fafd;
@@ -27,7 +26,7 @@ header {
 }
 header h1,
 header .tagline {
-  color: #fff; 
+  color: #000; 
 }
 
 header h1 {
